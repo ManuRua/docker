@@ -4,8 +4,8 @@ const port = 3000
 
 app.set('port', port)
 
-app.get('/', (req, res) => {
-  res.send('Hola Mundo!')
+app.get('/:nombre', (req, res) => {
+  res.send(`Hola ${req.params.nombre}!`)
 })
 
 app.listen(app.get('port'), (err) => {
