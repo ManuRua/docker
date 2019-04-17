@@ -7,3 +7,5 @@ USER nodejs
 
 WORKDIR /app
 COPY app/ .
+
+ENV  NODE_ENV develop
